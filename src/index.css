@@ -144,11 +144,13 @@ All colors MUST be HSL.
   }
   
   .chat-bubble-ai {
-    @apply bg-primary text-primary-foreground shadow-chat rounded-2xl rounded-bl-md;
+    @apply bg-primary text-primary-foreground rounded-2xl rounded-bl-md;
+    box-shadow: var(--shadow-chat);
   }
   
   .chat-bubble-user {
-    @apply bg-card text-card-foreground shadow-chat rounded-2xl rounded-br-md border;
+    @apply bg-card text-card-foreground rounded-2xl rounded-br-md border;
+    box-shadow: var(--shadow-chat);
   }
   
   /* Floating modal */
@@ -157,7 +159,8 @@ All colors MUST be HSL.
   }
   
   .modal-content {
-    @apply bg-card rounded-2xl shadow-floating border;
+    @apply bg-card rounded-2xl border;
+    box-shadow: var(--shadow-floating);
   }
   
   /* Gradient backgrounds */
