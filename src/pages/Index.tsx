@@ -159,7 +159,7 @@ const Index = () => {
           <header className="bg-card/80 backdrop-blur-sm border-b">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
               <div className="flex items-center space-x-3">
-                <div className="bg-galaxy p-2 rounded-xl">
+                <div className="bg-hero p-2 rounded-xl">
                   <Bot className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-xl font-semibold">AI Interviewer</span>
@@ -175,82 +175,23 @@ const Index = () => {
 
           {/* Hero Section */}
           <section className="relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 py-20">
-              <div className="text-center max-w-4xl mx-auto">
-                <div className="inline-flex items-center space-x-2 bg-card/60 backdrop-blur-sm rounded-full px-6 py-2 mb-8 border">
-                  <Sparkles className="w-4 h-4 text-accent" />
-                  <span className="text-sm font-medium">AI-Powered Interview Practice</span>
-                </div>
-                
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Ace your next interview with AI
+            <div className="max-w-7xl mx-auto px-6 py-32">
+              <div className="text-center max-w-3xl mx-auto">
+                <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  Attend Your Interview Now
                 </h1>
                 
-                <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                  Practice with our advanced AI interviewer. Get personalized feedback, 
-                  improve your responses, and build confidence for your dream job.
+                <p className="text-xl text-muted-foreground mb-12 max-w-xl mx-auto leading-relaxed">
+                  Start your AI-powered interview practice session right away.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={() => setIsAuthModalOpen(true)}
-                    size="lg"
-                    className="btn-galaxy text-lg px-8 py-4 h-auto"
-                  >
-                    Start Practicing Now
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="text-lg px-8 py-4 h-auto"
-                  >
-                    Watch Demo
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Features */}
-          <section className="py-20 bg-card/40 backdrop-blur-sm">
-            <div className="max-w-7xl mx-auto px-6">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold mb-4">Why Choose AI Interviewer?</h2>
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Our platform combines cutting-edge AI with proven interview techniques
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center p-6">
-                  <div className="bg-galaxy p-4 rounded-2xl w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <Bot className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">AI-Powered Conversations</h3>
-                  <p className="text-muted-foreground">
-                    Practice with our advanced AI that adapts to your responses and provides realistic interview scenarios.
-                  </p>
-                </div>
-                
-                <div className="text-center p-6">
-                  <div className="bg-galaxy p-4 rounded-2xl w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <Target className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">Personalized Feedback</h3>
-                  <p className="text-muted-foreground">
-                    Get detailed insights on your performance with actionable suggestions for improvement.
-                  </p>
-                </div>
-                
-                <div className="text-center p-6">
-                  <div className="bg-galaxy p-4 rounded-2xl w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <TrendingUp className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">Track Progress</h3>
-                  <p className="text-muted-foreground">
-                    Monitor your improvement over time with detailed analytics and performance metrics.
-                  </p>
-                </div>
+                <Button 
+                  onClick={() => setIsAuthModalOpen(true)}
+                  size="lg"
+                  className="btn-hero text-xl px-12 py-6 h-auto"
+                >
+                  Get Started
+                </Button>
               </div>
             </div>
           </section>

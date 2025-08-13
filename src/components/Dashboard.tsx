@@ -64,7 +64,7 @@ export function Dashboard({ user, sessions, onStartInterview, onLogout, onViewSe
       <div className="bg-card border-b px-6 py-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center space-x-3">
-            <div className="bg-galaxy p-2 rounded-lg">
+            <div className="bg-hero p-2 rounded-lg">
               <Bot className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -96,7 +96,7 @@ export function Dashboard({ user, sessions, onStartInterview, onLogout, onViewSe
             Ready to sharpen your interview skills? Start a new AI-powered practice session or review your progress.
           </p>
           
-          <Button onClick={onStartInterview} className="btn-galaxy text-lg px-8 py-4 h-auto">
+          <Button onClick={onStartInterview} className="btn-hero text-lg px-8 py-4 h-auto">
             <Play className="w-5 h-5 mr-2" />
             Start New Interview
           </Button>
@@ -180,7 +180,7 @@ export function Dashboard({ user, sessions, onStartInterview, onLogout, onViewSe
                     onClick={() => onViewSession(session.id)}
                   >
                     <div className="flex items-center space-x-4">
-                      <div className="bg-galaxy p-2 rounded-lg">
+                      <div className="bg-hero p-2 rounded-lg">
                         <Bot className="w-4 h-4 text-white" />
                       </div>
                       <div>

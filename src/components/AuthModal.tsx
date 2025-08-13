@@ -50,17 +50,17 @@ export function AuthModal({ isOpen, onClose, onLogin, onRegister }: AuthModalPro
         
         <CardHeader className="text-center pb-6">
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-galaxy p-3 rounded-xl">
+            <div className="bg-hero p-3 rounded-xl">
               <Bot className="w-6 h-6 text-white" />
             </div>
           </div>
           <CardTitle className="text-2xl font-semibold">
-            {isLogin ? 'Welcome back!' : 'Join AI Interviewer'}
+            {isLogin ? 'Welcome back!' : 'Create your account'}
           </CardTitle>
           <CardDescription>
             {isLogin 
               ? 'Log in to continue your journey.' 
-              : 'Start practicing with AI-powered interviews.'
+              : 'Join AI Interviewer to start practicing.'
             }
           </CardDescription>
         </CardHeader>
@@ -148,7 +148,7 @@ export function AuthModal({ isOpen, onClose, onLogin, onRegister }: AuthModalPro
 
             <Button 
               type="submit" 
-              className="w-full h-12 btn-galaxy"
+              className="w-full h-12 btn-hero"
               disabled={isLoading}
             >
               {isLoading ? 'Please wait...' : (isLogin ? 'Sign In' : 'Create Account')}

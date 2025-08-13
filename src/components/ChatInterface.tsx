@@ -58,7 +58,7 @@ export function ChatInterface({ isActive, onSendMessage, messages, isTyping }: C
       {/* Header */}
       <div className="bg-card border-b px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <div className="bg-galaxy p-2 rounded-lg">
+          <div className="bg-hero p-2 rounded-lg">
             <Bot className="w-5 h-5 text-white" />
           </div>
           <div>
@@ -79,7 +79,7 @@ export function ChatInterface({ isActive, onSendMessage, messages, isTyping }: C
       <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-center">
-            <div className="bg-galaxy p-6 rounded-2xl mb-4">
+            <div className="bg-hero p-6 rounded-2xl mb-4">
               <Bot className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Ready for your interview?</h3>
@@ -175,7 +175,7 @@ export function ChatInterface({ isActive, onSendMessage, messages, isTyping }: C
           <Button
             type="submit"
             size="sm"
-            className="btn-galaxy h-10 w-10 p-0"
+            className="btn-hero h-10 w-10 p-0"
             disabled={!inputValue.trim() || !isActive || isTyping}
           >
             <Send className="w-4 h-4" />
